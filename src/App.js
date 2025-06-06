@@ -36,15 +36,26 @@ function App() {
             <div key={index} >
               {res.nombre_localidad === 'CABA' ? (
                 <div className="Result">
-                  <div>
-                    <span>Calle: </span>
-                    <span>{res.nombre_calle}</span>
+                  <div className="DividerContainer">
+                    <hr />
                   </div>
                   <div>
-                    <span>Dirección: </span>
-                    <span>{res.direccion}</span>
                   </div>
+                  <div className="dataContainer">
+                    <div className="label">
+                      <span>Calle: </span>
+                      <span >Dirección:</span>
+                    </div>
+                    <div className="data">
+                      <span>{res.nombre_calle}</span>
+                      <span>{res.direccion}</span>
+                    </div>
+                  </div>
+                    <div className="DividerContainer">
+                      <hr />
+                    </div>
                 </div>
+                
               ) : (null)}
             </div>
           )

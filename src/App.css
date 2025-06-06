@@ -4,30 +4,58 @@
 
 .Input {
   display: flex;
-  justify-content: center;
   gap: 8px;
 }
 
 .Container {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  align-items: center;
+  gap: 32px;
 }
 
 .ResultsContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 8px;
 }
 
 .Result {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 2px;
 }
 
 .Button:disabled {
   cursor: not-allowed;
+}
+
+.Divider {
+  display: flex;
+  justify-content: center;
+}
+
+.dataContainer {
+ display: flex;
+ flex-direction: row;
+ gap: 16px;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  font-weight: bold;
+  text-align: end;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
 }
